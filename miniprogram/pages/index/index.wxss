@@ -1,0 +1,191 @@
+/**index.wxss**/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5f5f5f;
+}
+
+.paries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parties {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 680rpx;
+    margin-top: 15rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15rpx;
+    box-shadow: 5rpx 5rpx 5rpx #050517;
+    border: #c4c4c4 solid 5rpx;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-text {
+    margin-left: 25rpx;
+    display: flex;
+    flex-direction: column;
+    color: #5f5f5f;
+    font-size: 28rpx;
+    line-height: 2em;
+    justify-content: space-around;
+}
+
+.card-ticket {
+    width: 260rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.btn-buyTicket {
+    background-color: #03CEA4;
+    margin-right: 28rpx;
+}
+
+.btn-getTicket {
+    background-color: #F6AE2D;
+}
+
+.btn-goHere {
+    background-color: #4373B2;
+}
+
+.img {
+    width: 226rpx;
+    height: 132rpx;
+}
+
+.btn {
+    font-size: 30rpx;
+    font-weight: bold;
+    color: white;
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #000000;
+}
+
+.remain {
+    color: #BC1F00;
+    font-weight: bold;
+}
+
+.icon-riqi, .icon-didian {
+    display: inline-block;
+    color: #4373B2;
+    margin-right: 14rpx;
+}
+
+.icon-menpiao {
+    color: #f1aa19;
+    margin-left: 10rpx;
+}
+
+.float-btn {
+    border-radius: 50rpx 0 0 50rpx;
+    box-shadow: -5rpx 5rpx 20rpx #050517;
+    width: 150rpx;
+    height: 100rpx;
+    background-color: #050517;
+    position: fixed;
+    top: 880rpx;
+    right: 0rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9;
+}
+
+.float-btn-text {
+    margin-left: -30rpx;
+    color: #c4c4c4;
+    font-size: 28rpx;
+}
+
+.tool-bar {
+    width: 680rpx;
+    height: 80rpx;
+    position: fixed;
+    background: #050517;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+    font-size: 34rpx;
+    z-index: 9;
+}
+
+.tool-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tool-item-title {
+    margin-right: 17rpx;
+}
+
+.tool-item-title-ok {
+    color: #03cea4;
+}
+
+.msg {
+    width: 680rpx;
+    margin-top: 100rpx;
+    color: #5f5f5f;
+    font-size: 28rpx;
+    line-height: 2em;
+    padding: 20rpx;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15rpx;
+    box-shadow: 5rpx 5rpx 5rpx #050517;
+    border: #c4c4c4 solid 5rpx;
+}
+
+.wx-switch-input {
+    width: 78rpx !important;
+    height: 34rpx !important;
+}
+
+.wx-switch-input::before {
+    width: 78rpx !important;
+    height: 34rpx !important;
+}
+
+.wx-switch-input::after {
+    width: 34rpx !important;
+    height: 34rpx !important;
+}

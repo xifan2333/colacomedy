@@ -1,0 +1,21 @@
+
+@import './style/iconfont/iconfont.wxss';
+
+
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #050517;
+}
+

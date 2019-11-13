@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true, 
+  "backgroundTextStyle": "light" ,
+  "usingComponents":{
+    "calendar":"/components/calendar/index"
+  }
+}

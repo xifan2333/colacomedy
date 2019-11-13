@@ -1,0 +1,75 @@
+<view class="container">
+  <view class="tool-bar">
+    <view wx:if="{{!switchCalander}}" class="tool-item">
+      <view class="tool-item-title">👀</view>
+      <picker bindchange="pickerChange" value="{{index}}" range="{{showStatus}}">
+        <view class="picker">{{showStatus[showIndex]}} ▼</view>
+      </picker>
+    </view>
+    <view class="tool-item">
+      <view class="tool-item-title">👆</view>
+      <switch checked="{{switchRank}}" bindchange="switchRank" />
+    </view>
+    <view class="tool-item">
+      <view class="tool-item-title tool-item-ticket-ok">👌</view>
+      <switch checked="{{switchTicket}}" bindchange="switchTicketOk" />
+    </view>
+    <view class="tool-item">
+      <view class="tool-item-title tool-item-title-ok">📆</view>
+      <switch checked="{{switchCalander}}" bindchange="switchCalander" />
+    </view>
+  </view>
+  <calendar wx:if="{{switchCalander}}" calendarConfig="{{calendarConfig}}" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"  bind:onTapDay="onTapDay"></calendar>
+  <view class="paries-container" style="margin-top:{{partiesMargin}}rpx;">
+    <view class="parties" wx:if="{{parties.length}}" wx:for="{{parties}}" wx:key="id36" wx:for-item="party">
+      <view class="card">
+        <view class="card-info">
+          <view calss="card-image">
+            <image src="{{party.posterImage}}" class="img" />
+          </view>
+          <view class="card-text">
+            <view>
+              <text class="title">{{party.title}}</text>
+            </view>
+            <view>
+              <text class="iconfont icon-riqi"></text>
+              <text class="startDate">{{party.localeDate}}</text>
+            </view>
+            <view>
+              <text class="iconfont icon-didian"></text>
+              <text class="location">{{party.shortLocation}}</text>
+            </view>
+            <view class="card-ticket">
+              <view>
+                <text>余票：</text>
+                <text class="remain">{{party.remain}}</text>
+              </view>
+            </view>
+            <view class="card-btns">
+              <view>
+                <button class="btn btn-buyTicket" id="{{party.id36}}" bindtap="buyTicket">
+                  购票
+                </button>
+              </view>
+              <view>
+                <button class="btn btn-goHere" data-location="{{party.location}}" data-lnglat="{{party.lnglat}}" bindtap="goHere">
+                  到这去
+                </button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{parties.length==0 && load}}" class="msg">
+      <text>抱歉,演出线上票已售罄。</text>
+      <text>购买现场票咨询演出信息可添加可乐酱微信:</text>
+      <text selectable="{{true}}">cola-comedy</text>
+      <text>,您也可以使用更大的时间范围筛选演出信息:)</text>
+    </view>
+  </view>
+  <view class="float-btn" bindtap="getTicket">
+    <view class="iconfont icon-menpiao"></view>
+    <view class="float-btn-text">取票</view>
+  </view>
+</view>

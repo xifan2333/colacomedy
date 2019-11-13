@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#050517",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#050517",
+    "navigationBarTitleText": "可乐喜剧",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#4373B2",
+    "color":"#c4c4c4",
+    "backgroundColor": "#050517",
+    "list": [
+      {
+        "selectedIconPath": "images/show1.png",
+        "iconPath": "images/show0.png",
+        "pagePath": "pages/index/index",
+        "text": "演出"
+      },
+      { "selectedIconPath": "images/about_us1.png",
+        "iconPath": "images/about_us0.png",
+        "pagePath": "pages/about/about",
+        "text": "关于我们"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList":["wx6f6831e5b83b7535"],
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.3",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  }
+}
