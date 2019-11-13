@@ -21,8 +21,8 @@
 			"outputPath": ""
 		}
 	},
-	"appid": "wxbf0c336bc041543a",
-	"projectname": "可乐喜剧Beta",
+	"appid": "你的appid",
+	"projectname":"你的项目名称",
 	"libVersion": "2.9.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
